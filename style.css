@@ -78,7 +78,7 @@ p {
 }
 
 #search .iconemap {
-    border: 1px #F2F2F2 solid;
+    border: 1px transparent solid;
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
     padding: 15px 10px 12px 10px;
@@ -142,7 +142,7 @@ div .insideFilters {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #deebff;
+    border: 2px solid transparent;
     border-radius: 25px;
     color: #0065fc;
     background-color: #deebff;
@@ -341,7 +341,7 @@ div .insideFilters {
     display: flex;
     justify-content: center;
     background-color: white;
-    border: 5px white solid;
+    border: 5px transparent solid;
     border-radius: 20px;
     box-shadow: 2px 2px 2px #F2F2F2;
     padding: 3px;
