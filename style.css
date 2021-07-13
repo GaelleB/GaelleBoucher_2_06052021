@@ -339,7 +339,6 @@ div .insideFilters {
 
 #aside .aside {
     display: flex;
-    justify-content: center;
     background-color: white;
     border: 5px transparent solid;
     border-radius: 20px;
@@ -347,7 +346,7 @@ div .insideFilters {
     padding: 3px;
     margin: 0 30px 30px 0;
     height: 150px;
-    width: auto;
+    width: 100%;
 }
 
 .aside:hover {
@@ -791,7 +790,7 @@ footer ul li:hover {
         width: 100%;
         border-radius: 0;
         margin: 0;
-        padding: 20px 0 20px 20px;
+        padding: 10px;
     }
 
     #aside h2 {
@@ -809,7 +808,6 @@ footer ul li:hover {
         width: 100%;
         border: 1px solid white;
         border-radius: 20px;
-        padding: 5px;
     }
     
     .aside .titre {
