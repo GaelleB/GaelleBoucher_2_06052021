@@ -16,13 +16,11 @@
     <header>
         <nav>
             <img src="Assets/images/logo/Reservia.svg" alt="Reservia">
-            <div style="display: flex;">
-                <ul>
-                    <li><a href="#hebergements" class="hebergements">Hébergements</a> </li>
-                    <li><a href="#activites" class="activites">Activités</a></li>
-                </ul>
-                <div><a href="#inscriptions" class="inscription">S'inscrire</a></div>            
-            </div>
+            <ul>
+                <li><a href="#hebergements" class="hebergements">Hébergements</a> </li>
+                <li><a href="#activites" class="activites">Activités</a></li>
+            </ul>
+            <div><a href="#inscriptions" class="inscription">S'inscrire</a></div>   
         </nav>            
     </header>
 
@@ -209,44 +207,44 @@
     </section>
             
     <!--SECTION 2-->
-        <div id="activites">
-            <h2>Activités à Marseille</h2>
-            <div class="activity">
-                <div class="activity1">
-                    <img class="imageact1" src="Assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                    <h3 class="titre"> Vieux Port </h3>
-                </div>
-                
-                <div class="fort_iles">    
-                    <div class="activity2">
-                        <img class="imageact2" src="Assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                        <h3 class="titre"> Fort de Pomègues </h3>
-                    </div>    
-                    
-                    <div class="activity3">
-                        <img class="imageact3" src="Assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles de Frioul">
-                        <h3 class="titre"> Iles de Frioul </h3>
-                    </div>
-                </div>     
-
-                <div class="activity4">
-                    <img class="imageact4" src="Assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                    <h3 class="titre"> Parc National des Calanques </h3>
-                </div>
-
-                <div class="dame_long">    
-                    <div class="activity5">
-                        <img class="imageact5" src="Assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                        <h3 class="titre"> Notre-Dame-de-la-Garde </h3>
-                    </div>
-
-                    <div class="activity6">
-                        <img class="imageact6" src="Assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                        <h3 class="titre"> Parc Longchamp </h3>
-                    </div>
-                </div>    
+    <section class="activites">
+        <h2>Activités à Marseille</h2>
+        <div class="activity">
+            <div class="activity1">
+                <img class="imageact1" src="Assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                <h3 class="titre"> Vieux Port </h3>
             </div>
+            
+            <div class="fort_iles">    
+                <div class="activity2">
+                    <img class="imageact2" src="Assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                    <h3 class="titre"> Fort de Pomègues </h3>
+                </div>    
+                
+                <div class="activity3">
+                    <img class="imageact3" src="Assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles de Frioul">
+                    <h3 class="titre"> Iles de Frioul </h3>
+                </div>
+            </div>     
+
+            <div class="activity4">
+                <img class="imageact4" src="Assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                <h3 class="titre"> Parc National des Calanques </h3>
+            </div>
+
+            <div class="dame_long">    
+                <div class="activity5">
+                    <img class="imageact5" src="Assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                    <h3 class="titre"> Notre-Dame-de-la-Garde </h3>
+                </div>
+
+                <div class="activity6">
+                    <img class="imageact6" src="Assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                    <h3 class="titre"> Parc Longchamp </h3>
+                </div>
+            </div>    
         </div>
+    </section>
     </main>
 
     <!--FOOTER-->
@@ -258,6 +256,7 @@
             <li> Données et confidentialité </li>
         </ul>
         </div>
+
         <div>
         <h6>Nos hébergements</h6>
         <ul>
@@ -265,13 +264,15 @@
             <li> Soumettre votre hôtel </li>
         </ul>
         </div>
-        <div><h6>Assistance</h6>
-        <ul>
-            <li> Centre d'aide </li>
-            <li> Nous contacter </li>
-        </ul>
+
+        <div class="assistance">
+            <div><h6>Assistance</h6>
+            <ul>
+                <li> Centre d'aide </li>
+                <li> Nous contacter </li>
+            </ul>
+            </div>
         </div>
     </footer>
-
 </body>
 </html>
