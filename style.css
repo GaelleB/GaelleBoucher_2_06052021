@@ -15,7 +15,6 @@ body {
 /*Header*/
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -23,6 +22,7 @@ nav ul {
     display: flex;
     list-style: none;
     text-decoration: none;
+    padding-left: 650px;
 }
 
 nav ul li {
@@ -51,7 +51,6 @@ a:visited {
     margin: 0 15px;
     padding: 20px;
     font-size: 18px;
-    display: block;
 }
 
 /*Main*/
@@ -316,25 +315,26 @@ div .insideFilters {
     width: 30%;
     border-radius: 10px;
     background-color: #F2F2F2;
-    padding: 0 30px;
+    padding: 20px 30px;
     margin: 30px 25px 0 15px;
 }
 
 #aside h2 {
     font-size: 18px;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #aside .iconegraph {
     font-size: 18px;
-    margin: 20px;
+    margin: 10px;
 }
 
 #aside .titreicone {
     display: flex;
-    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
 }
 
 #aside .aside {
@@ -344,8 +344,8 @@ div .insideFilters {
     border-radius: 20px;
     box-shadow: 2px 2px 2px #F2F2F2;
     padding: 3px;
-    margin: 0 30px 30px 0;
-    height: 150px;
+    margin: 20px 30px 20px 0;
+    height: 160px;
     width: 100%;
 }
 
@@ -364,7 +364,7 @@ div .insideFilters {
 }
 
 .aside .prix {
-    font-size: 15px;
+    font-size: 12px;
     padding-left: 5px;
 }
 
@@ -374,8 +374,8 @@ div .insideFilters {
 
 .aside .etoiles {
     color: #0065FC;
-    font-size: 15px;
-    padding: 5px 0 30px 20px;
+    font-size: 14px;
+    padding: 10px 0 0 20px;
 }
 
 /*Images ASIDE*/
@@ -402,12 +402,12 @@ div .insideFilters {
 
 /*SECTION 2*/
 
-#activites h2 {
+.activites h2 {
     font-size: 20px;
     padding: 40px 0 10px 5px;
 }
 
-#activites .activity {
+.activites .activity {
     width: 98.5%;
     border-radius: 15px;
     display: flex;
@@ -626,16 +626,21 @@ footer h6 {
 }
 
 footer ul li {
+    width: 100%;
     height: auto;
     justify-content: space-around;
     list-style: none;
     font-size: 12px;
     margin: 5px 0 5px 10px;
-    padding: 2px 150px 5px 10px;
+    padding: 0 50px 5px 10px;
 }
 
 footer ul li:hover {
     text-decoration: underline;
+}
+
+footer .assistance {
+    padding-right: 300px;
 }
 
 /*Version tablette*/
@@ -651,9 +656,10 @@ footer ul li:hover {
 
     #aside {
         height: auto;
-        width: auto;
+        width: 100%;
         border-radius: 10px;
-        margin: 0 20px 10px 0px;
+        padding: 10px;
+        margin: auto;
         flex-direction: row;
     }
 
@@ -668,26 +674,30 @@ footer ul li:hover {
 
     #aside .aside {
         width: 100%;
-        margin: 30px 15px;
+        margin: 25px 5px;
     }
 
     #aside .aside .titre {
-        font-size: 13px;
+        font-size: 12px;
         padding: 5px 0 2px 8px;
     }
 
     #aside .aside .prix p {
-        font-size: 14px;
-        padding: 10px 0 10px 4px;
+        font-size: 12px;
+        padding: 20px 0 0 4px;
     }
 
     #aside .aside .etoiles {
-        font-size: 13px;
-        padding: 10px;
+        font-size: 12px;
+        padding: 30px 10px;
     }
     
     #hebergements {
         width: auto;
+    }
+
+    footer .assistance {
+        padding-right: 0;
     }
 }
 
@@ -747,6 +757,7 @@ footer ul li:hover {
     }
 
     #search .iconeloupe {
+        color: white;
         display: flex;
         border-radius: 0 10px 10px 0;
     }
@@ -787,9 +798,9 @@ footer ul li:hover {
     }
 
     #aside {
-        width: 100%;
+        width: 380px;
         border-radius: 0;
-        margin: 0;
+        margin: auto;
         padding: 10px;
     }
 
@@ -804,34 +815,34 @@ footer ul li:hover {
         padding-left: 35px;
     }
     
-    .aside {
+    #aside .aside {
         width: 100%;
         border: 1px solid white;
         border-radius: 20px;
+        padding: 5px;
     }
     
-    .aside .titre {
+    #aside .aside .titre {
         font-size: 14px;
         font-weight: bold;
         padding: 10px 0 10px 20px;
     }
     
-    .aside .prix p {
+    #aside .aside .prix p {
         font-size: 14px;
         padding: 5px 0 20px 15px;
     }
     
-    .aside .etoiles {
+    #aside .aside .etoiles {
         font-size: 14px;
         padding-bottom: 30px;
     }
 
     #hebergements {
         height: auto;
-        width: 100%;
+        width: 380px;
         background-color: white;
         align-items: center;
-        padding-top: 30px;
         padding: 0;
     }
 
@@ -870,16 +881,16 @@ footer ul li:hover {
         font-weight: bold;
     }
 
-    #activites {
+    .activites {
         height: auto;
-        width: 100%;
+        width: 380px;
     }
 
-    #activites h2 {
+    .activites h2 {
         font-size: 18px;
         padding-left: 10px;
     }
-    #activites .activity {
+    .activites .activity {
         display: block;
         width: 100%;
         border-radius: 15px;
@@ -900,7 +911,7 @@ footer ul li:hover {
     }
 
     footer {
-        width: 100%;
+        width: 380px;
         display: flex;
         flex-direction: column;
         padding: 0 0 20px 10px;
