@@ -15,20 +15,20 @@ body {
 /*Header*/
 nav {
     display: flex;
-    align-items: center;
+    width: 100%;
 }
 
 nav ul {
     display: flex;
+    position: relative;
     list-style: none;
     text-decoration: none;
-    padding-left: 650px;
+    padding-left: 500px;
 }
 
 nav ul li {
     color: #0065fc;
-    margin: 0 15px;
-    padding: 20px;
+    margin: 5px 50px;
     font-size: 18px;
 }
 
@@ -46,21 +46,22 @@ a:visited {
 }
 
 .inscription {
+    position: absolute;
     font-weight: bold;
     color: #0065fc;
-    margin: 0 15px;
-    padding: 20px;
     font-size: 18px;
+    padding-left: 120px;
 }
 
 /*Main*/
 nav img {
+    position: relative;
     padding-left: 12px;
 }
 
 h1 {
     font-size: 20px;
-    padding: 15px 0 15px 15px;
+    padding: 15px 0 20px 15px;
 }
 
 p {
@@ -323,11 +324,13 @@ div .insideFilters {
     font-size: 18px;
     align-items: center;
     justify-content: center;
+    padding-left: 3px;
 }
 
 #aside .iconegraph {
     font-size: 18px;
     margin: 10px;
+    padding-left: 90px;
 }
 
 #aside .titreicone {
@@ -647,6 +650,13 @@ footer .assistance {
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
     
+    nav ul {
+        padding-left: 300px;
+    }
+
+    .inscription {
+        padding-left: 100px;
+    }
     .hebergpop {
         display: flex;
         flex-direction: column-reverse;
