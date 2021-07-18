@@ -16,19 +16,18 @@ body {
 nav {
     display: flex;
     width: 100%;
+    padding-top: 20px;
 }
 
 nav ul {
     display: flex;
-    position: relative;
     list-style: none;
-    text-decoration: none;
-    padding-left: 500px;
+    padding-top: 10px;
 }
 
 nav ul li {
     color: #0065fc;
-    margin: 5px 50px;
+    margin: 5px 30px;
     font-size: 18px;
 }
 
@@ -36,21 +35,17 @@ a:link {
     text-decoration: none;
 }
 
-a:hover {
-    border-top: 2px #0065fc solid;
-    padding: 20px;
-}
-
 a:visited {
     color: #0065fc;
 }
 
 .inscription {
-    position: absolute;
     font-weight: bold;
     color: #0065fc;
     font-size: 18px;
-    padding-left: 120px;
+    display: block;
+    padding-top: 15px;
+    margin-left: 30px;
 }
 
 /*Main*/
@@ -359,7 +354,7 @@ div .insideFilters {
 .aside .titre {
     font-weight: bold;
     font-size: 14px;
-    padding: 10px 0 10px 20px;
+    padding: 0 20px;
 }
 
 .aside .titre:hover {
@@ -368,7 +363,7 @@ div .insideFilters {
 
 .aside .prix {
     font-size: 12px;
-    padding-left: 5px;
+    padding: 10px 5px;
 }
 
 .aside .prix:hover {
@@ -378,7 +373,7 @@ div .insideFilters {
 .aside .etoiles {
     color: #0065FC;
     font-size: 14px;
-    padding: 10px 0 0 20px;
+    padding: 0 20px;
 }
 
 /*Images ASIDE*/
@@ -405,12 +400,12 @@ div .insideFilters {
 
 /*SECTION 2*/
 
-.activites h2 {
+#activites h2 {
     font-size: 20px;
     padding: 40px 0 10px 5px;
 }
 
-.activites .activity {
+#activites .activity {
     width: 98.5%;
     border-radius: 15px;
     display: flex;
@@ -650,13 +645,6 @@ footer .assistance {
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
     
-    nav ul {
-        padding-left: 300px;
-    }
-
-    .inscription {
-        padding-left: 100px;
-    }
     .hebergpop {
         display: flex;
         flex-direction: column-reverse;
@@ -683,23 +671,22 @@ footer .assistance {
     }
 
     #aside .aside {
-        width: 100%;
         margin: 25px 5px;
     }
 
     #aside .aside .titre {
-        font-size: 12px;
+        font-size: 14px;
         padding: 5px 0 2px 8px;
     }
 
     #aside .aside .prix p {
-        font-size: 12px;
-        padding: 20px 0 0 4px;
+        font-size: 13px;
+        padding: 10px 0 0 4px;
     }
 
     #aside .aside .etoiles {
         font-size: 12px;
-        padding: 30px 10px;
+        padding: 20px 10px;
     }
     
     #hebergements {
@@ -720,16 +707,17 @@ footer .assistance {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        padding-top: 0;
     }
 
     nav ul li {
         width: 50%;
         align-items: center;
         color: #0065fc;
+        
     }
 
     a:hover {
-        border-top: none;
         border-bottom: 2px #0065fc solid;
         padding: 20px;
     }
@@ -747,9 +735,14 @@ footer .assistance {
         right: 0;
     }
 
+    .inscription:hover {
+        border-bottom: none;
+    }
+
     h1 {
         margin-top: 0;
         font-size: 25px;
+        padding-top: 50px;
     }
 
     p {
@@ -839,13 +832,13 @@ footer .assistance {
     }
     
     #aside .aside .prix p {
-        font-size: 14px;
+        font-size: 13px;
         padding: 5px 0 20px 15px;
     }
     
     #aside .aside .etoiles {
-        font-size: 14px;
-        padding-bottom: 30px;
+        font-size: 13px;
+        padding-bottom: 20px;
     }
 
     #hebergements {
@@ -891,16 +884,17 @@ footer .assistance {
         font-weight: bold;
     }
 
-    .activites {
+    #activites {
         height: auto;
         width: 380px;
     }
 
-    .activites h2 {
+    #activites h2 {
         font-size: 18px;
         padding-left: 10px;
     }
-    .activites .activity {
+
+    #activites .activity {
         display: block;
         width: 100%;
         border-radius: 15px;
