@@ -20,25 +20,38 @@ nav {
     padding-top: 20px;
 }
 
+nav img {
+    position: relative;
+    padding-left: 12px;
+    padding-top: 40px;
+}
+
 nav div {
     display: flex;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
     padding-top: 10px;
-}
-
-nav ul li {
     color: #0065fc;
-    margin: 5px 30px;
+    margin: 5px 20px;
     font-size: 16px;
 }
 
-nav ul li:hover {
+nav div .heberg {
+    font-size: 16px;
     border-top: 2px solid #0065fc;
-    padding-top: 20px;
+    padding: 40px 20px 10px 20px;
+}
+
+nav div .heberg:hover {
+    border-top: none;
+}
+
+nav div .acti {
+    font-size: 16px;
+    border-top: 2px solid #0065fc;
+    padding: 40px 20px 10px 20px;
+}
+
+nav div .acti:hover {
+    border-top: none;
 }
 
 a:link {
@@ -52,23 +65,16 @@ a:visited {
 .inscription {
     font-weight: bold;
     color: #0065fc;
-    font-size: 18px;
-    display: block;
-    padding-top: 14px;
-    padding-left: 20px;
-    padding-right: 40px;
+    font-size: 16px;
+    border-top: 2px solid #0065fc;
+    padding: 40px 20px 10px 20px;
 }
 
-.inscription:hover {
-    border-top: 2px solid #0065fc;
-    padding-top: 20px;
+nav div .inscription:hover {
+    border-top: none;
 }
 
 /*Main*/
-nav img {
-    position: relative;
-    padding-left: 12px;
-}
 
 h1 {
     font-size: 20px;
@@ -354,7 +360,7 @@ div .insideFilters {
 #aside .aside {
     display: flex;
     background-color: white;
-    border: 5px transparent solid;
+    border: 4px transparent solid;
     border-radius: 20px;
     box-shadow: 2px 2px 2px #F2F2F2;
     padding: 3px;
@@ -660,12 +666,23 @@ footer .assistance {
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
 
-    nav ul li:hover {
-        border-top: none;
+    nav img {
+        padding-top: 0;
     }
 
-    .inscription:hover {
+    nav div .heberg {
         border-top: none;
+        padding-top: 0;
+    }
+
+    nav div .acti {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    nav div .inscription {
+        border-top: none;
+        padding-top: 0;
     }
     
     .hebergpop {
@@ -705,12 +722,12 @@ footer .assistance {
 
     #aside .aside .prix p {
         font-size: 11px;
-        padding: 12px 0 0 8px;
+        padding: 15px 0 0 8px;
     }
 
     #aside .aside .etoiles {
         font-size: 12px;
-        padding: 25px 10px;
+        padding: 35px 10px;
     }
     
     #hebergements {
@@ -722,6 +739,24 @@ footer .assistance {
     }
 }
 
+@media screen and (max-width: 791px) {
+
+    #aside .aside .titre {
+        font-size: 11px;
+    }
+
+    #aside .aside .prix p {
+        padding-top: 30px;
+        font-size: 9px;
+    }
+
+    #aside .aside .etoiles {
+        padding-top: 40px;
+        padding-left: 6px;
+        font-size: 11px;
+    }
+}
+
 /*Version mobile*/
 
 @media screen and (max-width:767px) {
@@ -730,43 +765,60 @@ footer .assistance {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
         padding-top: 0;
     }
 
-    nav ul li {
-        width: 50%;
+    nav img {
+        padding-top: 20px;
+    }
+
+    nav div {
+        width: 100%;
+        justify-content: space-around;
         align-items: center;
         color: #0065fc;
     }
 
-    nav ul li:hover {
+    nav div .heberg {
+        font-size: 15px;
         border-top: none;
         border-bottom: 2px solid #0065fc;
-        padding-bottom: 10px;
+        padding: 0 40px 10px 30px;
     }
-    
+
+    nav div .heberg:hover {
+        border-top: none;
+    }
+
+    nav div .acti {
+        font-size: 15px;
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
+        padding: 0 40px 10px 40px;
+    }
+
+    nav div .acti:hover {
+        border-top: none;
+    }
+
     a:visited {
         color: #0065fc;
     }
 
-    .inscription {
+    nav div .inscription {
         font-weight: bold;
         color: #0065fc;
-        font-size: 18px;
+        font-size: 15px;
         position: absolute;
         top: 10px;
         right: 0;
-    }
-
-    .inscription:hover {
         border-top: none;
     }
 
     h1 {
         margin-top: 0;
         font-size: 25px;
-        padding-top: 50px;
+        padding-top: 40px;
     }
 
     p {
@@ -825,7 +877,7 @@ footer .assistance {
     }
 
     #aside {
-        width: 380px;
+        width: 360px;
         border-radius: 0;
         margin: auto;
         padding: 10px;
@@ -850,19 +902,19 @@ footer .assistance {
     }
     
     #aside .aside .titre {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: bold;
         padding: 10px 0 10px 20px;
     }
     
     #aside .aside .prix p {
         font-size: 13px;
-        padding: 5px 0 20px 15px;
+        padding: 7px 0 20px 20px;
     }
     
     #aside .aside .etoiles {
         font-size: 13px;
-        padding-bottom: 20px;
+        padding: 30px 20px;
     }
 
     #hebergements {
@@ -884,6 +936,7 @@ footer .assistance {
         box-shadow: 1px 1px 1px #F2F2F2;
         border-radius: 30px;
         padding: 5px;
+        margin-right: 20px;
     }
 
     .article .titre {
@@ -904,7 +957,7 @@ footer .assistance {
     .articles h4 {
         width: 100%;
         font-size: 14px;
-        padding: 20px 0 20px 15px;
+        padding: 20px 0 20px 30px;
         font-weight: bold;
     }
 
@@ -923,11 +976,12 @@ footer .assistance {
         width: 100%;
         border-radius: 15px;
         align-items: center;
-        margin: 0;
     }
 
     .activity> div {
-        width: 100%;
+        width: auto;
+        align-items: center;
+        margin-right: 16px;
     }
 
     .activity1, .activity4 {
@@ -939,10 +993,9 @@ footer .assistance {
     }
 
     footer {
-        width: 380px;
+        width: 360px;
         display: flex;
         flex-direction: column;
-        padding: 0 0 20px 10px;
     }
 
     footer ul li {
