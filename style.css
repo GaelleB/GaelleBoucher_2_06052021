@@ -364,7 +364,7 @@ div .insideFilters {
     border-radius: 20px;
     box-shadow: 2px 2px 2px #F2F2F2;
     padding: 3px;
-    margin: 20px 30px 20px 0;
+    margin: auto;
     height: 160px;
     width: 100%;
 }
@@ -374,7 +374,7 @@ div .insideFilters {
 }
 
 .aside .titre {
-    font-size: 13px;
+    font-size: 12px;
     padding: 5px 10px;
 }
 
@@ -394,7 +394,7 @@ div .insideFilters {
 .aside .etoiles {
     color: #0065FC;
     font-size: 12px;
-    padding: 30px 10px;
+    padding: 15px 10px;
 }
 
 /*Images ASIDE*/
@@ -636,6 +636,7 @@ footer {
     background-color: #F2F2F2;
     padding-bottom: 20px;
     padding-left: 0;
+    margin: auto;
 }
 
 footer h6 {
@@ -721,7 +722,7 @@ footer .assistance {
     }
 
     #aside .aside .prix p {
-        font-size: 11px;
+        font-size: 12px;
         padding: 15px 0 0 8px;
     }
 
@@ -747,13 +748,13 @@ footer .assistance {
 
     #aside .aside .prix p {
         padding-top: 30px;
-        font-size: 9px;
+        font-size: 9.5px;
     }
 
     #aside .aside .etoiles {
         padding-top: 40px;
         padding-left: 6px;
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 
@@ -895,10 +896,12 @@ footer .assistance {
     }
     
     #aside .aside {
+        height: 160px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px;
         padding: 5px;
+        margin-top: 20px;
     }
     
     #aside .aside .titre {
@@ -919,10 +922,11 @@ footer .assistance {
 
     #hebergements {
         height: auto;
-        width: 380px;
+        width: 360px;
         background-color: white;
         align-items: center;
         padding: 0;
+        margin: auto;
     }
 
     #hebergements h2 {
@@ -930,13 +934,13 @@ footer .assistance {
     }
 
     #hebergements .article {
+        align-items: center;
         height: auto;
         width: 100%;
         border: 1px #F2F2F2 solid;
         box-shadow: 1px 1px 1px #F2F2F2;
         border-radius: 30px;
         padding: 5px;
-        margin-right: 20px;
     }
 
     .article .titre {
@@ -964,6 +968,7 @@ footer .assistance {
     #activites {
         height: auto;
         width: 380px;
+        margin: auto;
     }
 
     #activites h2 {
